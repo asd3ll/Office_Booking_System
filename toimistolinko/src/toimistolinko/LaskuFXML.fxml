@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistolinko.LaskuFXMLController">
+   <children>
+      <Label layoutX="53.0" layoutY="32.0" text="Laskutus">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLaskunumero" layoutX="51.0" layoutY="143.0" prefHeight="39.0" prefWidth="526.0" promptText="Laskunumero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLoppusumma" layoutX="51.0" layoutY="227.0" prefHeight="39.0" prefWidth="526.0" promptText="Loppusumma">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtVastaanottaja" layoutX="51.0" layoutY="312.0" prefHeight="39.0" prefWidth="526.0" promptText="Etu- ja sukunimi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLahiosoite" layoutX="52.0" layoutY="397.0" prefHeight="39.0" prefWidth="526.0" promptText="Lähiosoite">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPostiNro" layoutX="52.0" layoutY="484.0" prefHeight="39.0" prefWidth="208.0" promptText="Postinumero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPostitoimipaikka" layoutX="281.0" layoutY="484.0" prefHeight="37.0" prefWidth="295.0" promptText="Postitoimipaikka">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSahkopostiosoite" layoutX="53.0" layoutY="569.0" prefHeight="39.0" prefWidth="526.0" promptText="esimerkki@esimerkki.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtViitenumero" layoutX="52.0" layoutY="654.0" prefHeight="39.0" prefWidth="526.0" promptText="0000">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtErapaiva" layoutX="623.0" layoutY="142.0" prefHeight="39.0" prefWidth="526.0" promptText="vvvv-kk-pp">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="52.0" layoutY="108.0" text="Laskunumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="192.0" text="Loppusumma:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="276.0" text="Vastaanottaja:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="362.0" text="Lähiosoite:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="448.0" text="Postinumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="448.0" text="Postitoimipaikka:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="534.0" text="Sähköpostiosoite:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="619.0" text="Viitenumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="107.0" text="Eräpäivä:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPvm" layoutX="623.0" layoutY="309.0" prefHeight="39.0" prefWidth="526.0" promptText="vvvv-kk-pp">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="624.0" layoutY="274.0" text="Laskun toimituspäivämäärä:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMaksuehto" layoutX="623.0" layoutY="395.0" prefHeight="39.0" prefWidth="252.0" promptText="Maksuehto">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="624.0" layoutY="360.0" text="Maksuehto:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtKustannuspaikka" layoutX="895.0" layoutY="395.0" prefHeight="39.0" prefWidth="252.0" promptText="Kustannuspaikka">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="897.0" layoutY="360.0" text="Kustannuspaikka:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTila" layoutX="623.0" layoutY="483.0" prefHeight="39.0" prefWidth="526.0" promptText="0=mitätöity, 1=toimitettu, 2=myöhässä, 3=perinnässä, 4=maksettu">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label layoutX="624.0" layoutY="447.0" text="Laskun tila:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAsiakasnumero" layoutX="623.0" layoutY="568.0" prefHeight="39.0" prefWidth="526.0" promptText="Asiakasnumero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="624.0" layoutY="532.0" text="Asiakasnumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVarausnumero" layoutX="623.0" layoutY="653.0" prefHeight="39.0" prefWidth="526.0" promptText="Varausnumero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="625.0" layoutY="617.0" text="Varausnumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="192.0" text="Laskutustapa:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radiobuttonPaperilasku" layoutX="624.0" layoutY="229.0" mnemonicParsing="false" text="Paperilasku">
+         <toggleGroup>
+            <ToggleGroup fx:id="laskutustapa" />
+         </toggleGroup>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radiobuttonSahkoinenLasku" layoutX="781.0" layoutY="229.0" mnemonicParsing="false" text="Sähköinen lasku" toggleGroup="$laskutustapa">
+         <font>
+            <Font size="16.0" />
+         </font></RadioButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d4ed" height="7.0" layoutX="53.0" layoutY="82.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1096.0" />
+      <Button fx:id="btnHaeLasku" layoutX="53.0" layoutY="723.0" mnemonicParsing="false" onAction="#btn_haeLasku" onMouseEntered="#btnHaeOnMouseEntered" onMouseExited="#ntnHaeOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Hae" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_hae.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnLisaaLasku" layoutX="215.0" layoutY="723.0" mnemonicParsing="false" onAction="#btn_lisaaLasku" onMouseEntered="#btnLisaaOnMouseEntered" onMouseExited="#btnLisaaOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Lisää" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_lisaa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnMuokkaaLaskua" layoutX="378.0" layoutY="723.0" mnemonicParsing="false" onAction="#btn_muokkaaLaskua" onMouseEntered="#btnMuokkaaOnMouseEntered" onMouseExited="#btnMuokkaaOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Muokkaa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_muokkaa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnPoistaLasku" layoutX="540.0" layoutY="723.0" mnemonicParsing="false" onAction="#btn_poistaLasku" onMouseEntered="#btnPoistaOnMouseEntered" onMouseExited="#btnPoistaOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Poista" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_poista.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnPalaaPaavalikkoon" layoutX="915.0" layoutY="723.0" mnemonicParsing="false" onAction="#btn_PalaaPaavalikkoon" onMouseEntered="#btnPalaaOnMouseEntered" onMouseExited="#btnPalaaOnMouseExited" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #304890;" text="  Palaa päävalikkoon" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_koti.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

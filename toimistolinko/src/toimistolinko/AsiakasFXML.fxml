@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="712.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistolinko.AsiakasFXMLController">
+   <children>
+      <Label layoutX="41.0" layoutY="57.0" text="Asiakashallinta">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAsiakasnro" layoutX="274.0" layoutY="166.0" prefHeight="37.0" prefWidth="396.0" promptText="Asiakasnumero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNimi" layoutX="275.0" layoutY="214.0" prefHeight="37.0" prefWidth="396.0" promptText="Etu- ja sukunimi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtHyTunnus" layoutX="276.0" layoutY="262.0" prefHeight="37.0" prefWidth="396.0" promptText="Henkilötunnus / Yritystunnus">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLahiosoite" layoutX="276.0" layoutY="310.0" prefHeight="37.0" prefWidth="396.0" promptText="Lähiosoite">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPostiNro" layoutX="276.0" layoutY="358.0" prefHeight="37.0" prefWidth="396.0" promptText="Postinumero">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPostitoimipaikka" layoutX="277.0" layoutY="407.0" prefHeight="37.0" prefWidth="396.0" promptText="Postitoimipaikka">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPuhNro" layoutX="277.0" layoutY="455.0" prefHeight="37.0" prefWidth="396.0" promptText="050 123 4567">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSahkoposti" layoutX="277.0" layoutY="503.0" prefHeight="37.0" prefWidth="396.0" promptText="esimerkki@esimerkki.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtYhteyshenkilo" layoutX="278.0" layoutY="552.0" prefHeight="37.0" prefWidth="396.0" promptText="Etu- ja sukunimi">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnHaeAsiakas" layoutX="39.0" layoutY="664.0" mnemonicParsing="false" onAction="#btn_haeAsiakas" onMouseEntered="#btnHaeOnMouseEntered" onMouseExited="#ntnHaeOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Hae" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_hae.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnLisaaAsiakas" layoutX="201.0" layoutY="664.0" mnemonicParsing="false" onAction="#btn_lisaaAsiakas" onMouseEntered="#btnLisaaOnMouseEntered" onMouseExited="#btnLisaaOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Lisää" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_lisaa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnMuokkaaAsiakas" layoutX="364.0" layoutY="664.0" mnemonicParsing="false" onAction="#btn_muokkaaAsiakasta" onMouseEntered="#btnMuokkaaOnMouseEntered" onMouseExited="#btnMuokkaaOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Muokkaa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_muokkaa.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnPoistaAsiakas" layoutX="526.0" layoutY="664.0" mnemonicParsing="false" onAction="#btn_poistaAsiakas" onMouseEntered="#btnPoistaOnMouseEntered" onMouseExited="#btnPoistaOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Poista" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_poista.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnPalaaPaavalikkoon" layoutX="442.0" layoutY="731.0" mnemonicParsing="false" onAction="#btn_PalaaPaavalikkoon" onMouseEntered="#btnPalaaOnMouseEntered" onMouseExited="#btnPalaaOnMouseExited" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #304890;" text="  Palaa päävalikkoon" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_koti.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="41.0" layoutY="173.0" text="Asiakasnumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="221.0" text="Nimi:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="269.0" text="Henkilötunnus / Yritystunnus:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="317.0" text="Lähiosoite:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="365.0" text="Postinumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="414.0" text="Postitoimipaikka:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="462.0" text="Puhelinnumero:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="510.0" text="Sähköpostiosoite:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="559.0" text="Yhteyshenkilö:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d4ed" height="6.0" layoutX="38.0" layoutY="111.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="631.0" />
+   </children>
+</Pane>

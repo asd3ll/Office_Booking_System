@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="666.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistolinko.LisapalvelutJaLaitteetFXMLController">
+   <children>
+      <Label layoutX="40.0" layoutY="36.0" text="Lisäpalvelut ja laitteet">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d4ed" height="7.0" layoutX="37.0" layoutY="89.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="587.0" />
+      <Label layoutX="37.0" layoutY="176.0" text="Haettava aikajakso:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="121.0" text="Syötä aikajakso ja toimipiste:">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepickerAloitusPvm" layoutX="201.0" layoutY="169.0" prefHeight="39.0" prefWidth="196.0" promptText="Aloituspäivämäärä" />
+      <Label layoutX="408.0" layoutY="170.0" text="-">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepickerPaattymisPvm" layoutX="429.0" layoutY="169.0" prefHeight="39.0" prefWidth="196.0" promptText="Päättymispäivämäärä" />
+      <Label layoutX="37.0" layoutY="229.0" prefHeight="20.0" prefWidth="78.0" text="Toimipiste:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtToimipiste" layoutX="201.0" layoutY="222.0" prefHeight="37.0" prefWidth="196.0" promptText="Toimipiste">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnListaaPaJaLait" layoutX="38.0" layoutY="284.0" mnemonicParsing="false" onAction="#btn_listaaPaJaLait" onMouseEntered="#btnPaJaLaitOnMouseEntered" onMouseExited="#ntnPaJaLaitOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Listaa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_hae.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tblLiJaLa" layoutX="37.0" layoutY="359.0" prefHeight="338.0" prefWidth="587.0">
+        <columns>
+          <TableColumn fx:id="col1_varausNro" prefWidth="187.0" text="Varausnumero" />
+          <TableColumn fx:id="col2_palvelunID" minWidth="0.0" prefWidth="188.0" text="Palvelun ID" />
+            <TableColumn fx:id="col3_kplMaara" minWidth="0.0" prefWidth="211.0" text="Kappalemäärä" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPalaaPaavalikkoon" layoutX="392.0" layoutY="727.0" mnemonicParsing="false" onAction="#btn_PalaaPaavalikkoon" onMouseEntered="#btnPalaaOnMouseEntered" onMouseExited="#btnPalaaOnMouseExited" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #304890;" text="  Palaa päävalikkoon" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_koti.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

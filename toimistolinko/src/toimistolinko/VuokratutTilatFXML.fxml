@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistolinko.VuokratutTilatFXMLController">
+   <children>
+      <Label layoutX="30.0" layoutY="33.0" text="Vuokratut tilat">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9d4ed" height="7.0" layoutX="27.0" layoutY="87.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="1146.0" />
+      <Label layoutX="27.0" layoutY="117.0" text="Syötä aikajakso ja toimipiste:">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="172.0" text="Haettava aikajakso:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepickerAloitusPvm" layoutX="191.0" layoutY="165.0" prefHeight="39.0" prefWidth="196.0" promptText="Aloituspäivämäärä" />
+      <Label layoutX="398.0" layoutY="166.0" text="-">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datepickerPaattymisPvm" layoutX="419.0" layoutY="165.0" prefHeight="39.0" prefWidth="196.0" promptText="Päättymispäivämäärä" />
+      <Label layoutX="27.0" layoutY="225.0" prefHeight="20.0" prefWidth="78.0" text="Toimipiste:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtToimipiste" layoutX="191.0" layoutY="218.0" prefHeight="37.0" prefWidth="196.0" promptText="Toimipiste">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnListaa" layoutX="27.0" layoutY="276.0" mnemonicParsing="false" onAction="#btn_listaaVuokratutTilat" onMouseEntered="#btnHaeOnMouseEntered" onMouseExited="#ntnHaeOnMouseExited" prefHeight="39.0" prefWidth="148.0" style="-fx-background-color: #304890;" text="  Listaa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_hae.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tblVuokratutTilat" layoutX="27.0" layoutY="353.0" prefHeight="357.0" prefWidth="1146.0">
+        <columns>
+          <TableColumn fx:id="col1_varausNro" prefWidth="118.0" text="Varausnumero" />
+          <TableColumn fx:id="col2_tilanVuokra" prefWidth="109.0" text="Tilan vuokra" />
+            <TableColumn fx:id="col3_palvVuokra" prefWidth="141.0" text="Palveluiden vuokra" />
+            <TableColumn fx:id="col4_aloitusPvm" prefWidth="107.0" text="Aloituspvm" />
+            <TableColumn fx:id="col5_paattymisPvm" prefWidth="122.0" text="Päättymispvm" />
+            <TableColumn fx:id="col6_vuokranAlv" prefWidth="110.0" text="Vuokran alv" />
+            <TableColumn fx:id="col7_PalvAlv" prefWidth="128.0" text="Palveluiden alv" />
+            <TableColumn fx:id="col8_varausTehty" prefWidth="109.0" text="Varaus tehty" />
+            <TableColumn fx:id="col9_ToimistonID" prefWidth="108.0" text="Toimiston ID" />
+            <TableColumn fx:id="col10_asiakasNro" prefWidth="93.0" text="Asiakasnro" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPalaaPaavalikkoon" layoutX="940.0" layoutY="734.0" mnemonicParsing="false" onAction="#btn_PalaaPaavalikkoon" onMouseEntered="#btnPalaaOnMouseEntered" onMouseExited="#btnPalaaOnMouseExited" prefHeight="39.0" prefWidth="232.0" style="-fx-background-color: #304890;" text="  Palaa päävalikkoon" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icon_koti.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>
