@@ -21,8 +21,7 @@ A desktop application for managing office spaces, client interactions, and integ
 ## Contact:
 For questions or collaboration, please reach out via private message.
 
-## License:
-This project is copyrighted. All rights reserved.
+
 
 
 
