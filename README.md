@@ -2,6 +2,8 @@
 
 A desktop application for managing office spaces, client interactions, and integrated services.
 
+**Note**: The project uploaded to GitHub is not a complete production version. It is intended to showcase parts of the code and the overall structure.
+
 ## Key Features:
 - **Office & Client Management**: Quick search and data modification.
 - **Service Integration**: Easy addition with conflict alerts.
